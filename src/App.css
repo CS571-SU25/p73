@@ -1,9 +1,20 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+} */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7; /* consistent background */
 }
+
 
 .logo {
   height: 6em;
@@ -40,3 +51,46 @@
 .read-the-docs {
   color: #888;
 }
+
+/* added */
+.album-pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+/* .album-pool {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+} */
+
+.tier-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tier-column {
+  flex: 1;
+  min-width: 150px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #eeeeee;
+  border-radius: 8px;
+}
+.album-pool img {
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+.album-pool img:hover {
+  transform: scale(1.05);
+  cursor: grab;
+}
+.center-text {
+  text-align: center;
+}
+
+
